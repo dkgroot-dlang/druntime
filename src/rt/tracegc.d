@@ -40,14 +40,14 @@ version (none)
       }
         printf("\n");
       {
-        int[] a; delete a;
-        S[] as; delete as;
-        C c; delete c;
-        I i; delete i;
-        C* pc = &c; delete *pc;
-        I* pi = &i; delete *pi;
-        int* pint; delete pint;
-        S* ps; delete ps;
+        int[] a; a.destroy();
+        S[] as; as.destroy();
+        C c; c.destroy();
+        I i; i.destroy();
+        C* pc = &c; *pc.destroy();
+        I* pi = &i; *pi.destroy();
+        int* pint; pint.destroy();
+        S* ps; ps.destroy();
       }
         printf("\n");
       {
